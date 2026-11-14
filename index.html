@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Big Pizza · Pizzeria, Cucina, Delivery · Caserta</title>
+  <meta name="description" content="Il menù di Big Pizza, pizzeria nel Rione Vanvitelli a Caserta: pizze, pizze ½ metro, antipasti, primi, secondi e bevande. Ordina al 379 289 6651.">
+  <meta name="theme-color" content="#f5efdf">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta property="og:title" content="Big Pizza · Caserta">
+  <meta property="og:description" content="Pizzeria · Cucina · Delivery. Sfoglia il menù e ordina al 379 289 6651.">
+  <meta property="og:image" content="img/anteprima-social.jpg">
+  <meta property="og:type" content="restaurant">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Big Pizza",
+    "servesCuisine": ["Pizza", "Cucina italiana"],
+    "telephone": "+39 379 289 6651",
+    "address": {"@type": "PostalAddress", "streetAddress": "Via Dossetti 9", "addressLocality": "Caserta", "postalCode": "81100", "addressRegion": "CE", "addressCountry": "IT"},
+    "openingHours": ["Tu-Su 10:00-15:00", "Tu-Su 18:00-24:00"],
+    "sameAs": ["https://www.instagram.com/big_pizza_caserta/", "https://www.facebook.com/share/1JQRbMTiDx/"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- SVG riutilizzabili: skyline del Rione e trattini tricolore -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="skyline" viewBox="0 0 220 60">
+    <path fill="currentColor" d="M0 59h220v1H0z"/>
+    <g fill="currentColor">
+      <path d="M18 30h44v29H18z"/><path d="M38 22h2v8h-2zM33 22h12v2H33z"/>
+      <path d="M118 16h34v43h-34z"/><path d="M133 6h2v10h-2zM128 6h12v2h-12z"/>
+      <path d="M152 40h14v19h-14z"/>
+    </g>
+    <path d="M62 34c18 10 38 10 56 0" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <g fill="currentColor"><path d="M76 39h5v6h-5zM90 41h5v7h-5zM104 39h5v6h-5z"/></g>
+    <g fill="var(--crema)">
+      <path d="M23 37h6v6h-6zM37 37h6v6h-6zM51 37h6v6h-6zM23 48h6v6h-6zM51 48h6v6h-6z"/>
+      <path d="M123 22h6v6h-6zM141 22h6v6h-6zM123 33h6v6h-6zM141 33h6v6h-6zM123 44h6v6h-6zM141 44h6v6h-6z"/>
+      <path d="M156 46h6v6h-6z"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="hero" id="top">
+  <img class="hero-logo" src="img/logo.jpg" width="640" height="584" alt="Big Pizza · Pizzeria · Cucina · Delivery">
+  <p class="hero-address">Via Dossetti 9 · Rione Vanvitelli · Caserta</p>
+  <p class="hero-orari">Mar – Dom · 10–15 e 18–24 · <strong>Lunedì chiuso</strong></p>
+  <div class="hero-actions">
+    <a class="btn btn-red" href="tel:+393792896651">Chiama per ordinare</a>
+    <a class="btn btn-green" href="https://wa.me/393792896651" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="hero-segui">Seguici per novità e offerte</p>
+  <div class="social-actions ">
+    <a class="btn btn-social btn-ig" href="https://www.instagram.com/big_pizza_caserta/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg><span>Instagram</span></a>
+    <a class="btn btn-social btn-fb" href="https://www.facebook.com/share/1JQRbMTiDx/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg><span>Facebook</span></a>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sezioni del menù">
+  <div class="tabs-inner">
+    <a href="#pizze">Pizze</a>
+    <a href="#sfizi">Sfizi</a>
+    <a href="#antipasti">Antipasti</a>
+    <a href="#primi">Primi</a>
+    <a href="#secondi">Secondi</a>
+    <a href="#contorni">Contorni</a>
+    <a href="#insalatone">Insalatone</a>
+    <a href="#dolci">Dolci</a>
+    <a href="#bevande">Bevande</a>
+    <a href="#storia">La nostra storia</a>
+    <a href="#contatti">Contatti</a>
+    <a href="#seguici">Seguici</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===================== PIZZE ===================== -->
+  <section id="pizze" class="sezione">
+    <h2>Pizze</h2>
+    <div class="col-head"><span>pizza</span><span class="rosso">½ metro</span></div>
+    <ul class="lista">
+      <li><div class="voce"><h3>Margherita</h3><p>pomodoro, fior di latte, basilico, olio evo</p></div><span class="p">5,00</span><span class="p rosso">10,00</span></li>
+      <li><div class="voce"><h3>Napoli</h3><p>pomodoro, aglio, origano, basilico, olio evo</p></div><span class="p">4,00</span><span class="p rosso">10,00</span></li>
+      <li><div class="voce"><h3>Diavola</h3><p>pomodoro, fior di latte, salame piccante, basilico, olio evo</p></div><span class="p">7,00</span><span class="p rosso">15,00</span></li>
+      <li><div class="voce"><h3>Capricciosa</h3><p>prosciutto cotto, funghi, carciofini, fior di latte, olive nere</p></div><span class="p">8,00</span><span class="p rosso">15,00</span></li>
+      <li><div class="voce"><h3>Ortolana</h3><p>melanzane, zucchine, peperoni, fior di latte, olio evo</p></div><span class="p">8,00</span><span class="p rosso">15,00</span></li>
+      <li><div class="voce"><h3>Wurstel e patatine</h3><p>wurstel, patatine, fior di latte, olio evo</p></div><span class="p">7,00</span><span class="p rosso">15,00</span></li>
+      <li><div class="voce"><h3>Mimosa</h3><p>panna, prosciutto cotto, fior di latte, mais, basilico, olio evo</p></div><span class="p">7,00</span><span class="p rosso">15,00</span></li>
+      <li><div class="voce"><h3>Porchettona</h3><p>porchetta, patate al forno, fior di latte, basilico, olio evo</p></div><span class="p">8,00</span><span class="p rosso">18,00</span></li>
+      <li><div class="voce"><h3>Crocchettona</h3><p>prosciutto cotto, crocché di patate, fior di latte, olio evo, basilico</p></div><span class="p">8,00</span><span class="p rosso">18,00</span></li>
+      <li><div class="voce"><h3>Salsiccia e friarielli</h3><p>salsiccia, friarielli, provola, basilico, olio evo</p></div><span class="p">8,00</span><span class="p rosso">18,00</span></li>
+      <li><div class="voce"><h3>Salsiccia e patate al forno</h3><p>salsiccia, patate al forno, fior di latte, basilico, olio evo</p></div><span class="p">8,00</span><span class="p rosso">18,00</span></li>
+      <li><div class="voce"><h3>Bufalina</h3><p>pomodoro, mozzarella di bufala, basilico, olio evo</p></div><span class="p">8,00</span><span class="p rosso">18,00</span></li>
+      <li><div class="voce"><h3>Siciliana</h3><p>pomodoro, melanzane, provola, basilico, scaglie di grana, olio evo</p></div><span class="p">8,00</span><span class="p rosso">15,00</span></li>
+      <li><div class="voce"><h3>Fresca</h3><p>pomodorini, rucola, scaglie di grana, crudo di Parma, olio evo</p></div><span class="p">8,00</span><span class="p rosso">18,00</span></li>
+      <li><div class="voce"><h3>Pistacchiona</h3><p>fior di latte, mortadella, crema di pistacchio, granella di pistacchio, basilico, olio evo</p></div><span class="p">8,00</span><span class="p rosso">18,00</span></li>
+      <li><div class="voce"><h3>Nocella</h3><p>fior di latte, crema di noci, crudo di Parma, gherigli di noci, basilico, olio evo</p></div><span class="p">9,00</span><span class="p rosso">20,00</span></li>
+      <li><div class="voce"><h3>4 formaggi</h3><p>fior di latte, provola, gorgonzola, grana, basilico, olio evo</p></div><span class="p">8,00</span><span class="p rosso">15,00</span></li>
+      <li><div class="voce"><h3>4 formaggi con salame piccante</h3><p>fior di latte, provola, gorgonzola, grana, salame piccante, basilico, olio evo</p></div><span class="p">9,00</span><span class="p rosso">18,00</span></li>
+      <li><div class="voce"><h3>Porcina</h3><p>fior di latte, funghi porcini, speck, basilico, olio evo</p></div><span class="p">9,00</span><span class="p rosso">18,00</span></li>
+      <li class="speciale"><div class="voce"><h3>Big Pizza</h3><p>salsa di pomodorini cotta, mozzarella di bufala, scaglie di grana, basilico, olio evo</p></div><span class="p">9,00</span><span class="p rosso">18,00</span></li>
+    </ul>
+    <div class="box-extra">
+      <div><strong>Pizze fritte</strong> a scelta <span class="p">8,00</span></div>
+      <div><strong>Panuozzi</strong> a scelta <span class="p">8,00</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== SFIZI ===================== -->
+  <section id="sfizi" class="sezione">
+    <h2>Sfizi</h2>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Crocché</h3></div><span class="p">1,00</span></li>
+      <li><div class="voce"><h3>Frittatine</h3><p>vari gusti</p></div><span class="p">2,00</span></li>
+      <li><div class="voce"><h3>Arancini</h3><p>prosciutto e mozzarella</p></div><span class="p">2,00</span></li>
+    </ul>
+  </section>
+
+  <!-- ===================== ANTIPASTI ===================== -->
+  <section id="antipasti" class="sezione">
+    <h2>Antipasti</h2>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Fritture x2</h3><p>crocché di patate, arancini di riso prosciutto e mozzarella, montanare, mozzarella in carrozza</p></div><span class="p">9,00</span></li>
+      <li><div class="voce"><h3>Selezione di salumi e formaggi x2</h3></div><span class="p">10,00</span></li>
+      <li><div class="voce"><h3>Parmigiana di melanzane</h3><p>dorate e fritte, sugo, provola e parmigiano</p></div><span class="p">7,00</span></li>
+      <li><div class="voce"><h3>Mozzarella di bufala 250 g e prosciutto crudo di Parma</h3></div><span class="p">10,00</span></li>
+      <li><div class="voce"><h3>Mozzarella di bufala 250 g</h3><p>rucola, pomodorini e basilico</p></div><span class="p">8,00</span></li>
+      <li><div class="voce"><h3>Bruschetta</h3><p>4 pezzi</p></div><span class="p">5,00</span></li>
+      <li><div class="voce"><h3>Polpo all'insalata x2 <span class="surg">*</span></h3></div><span class="p">11,00</span></li>
+      <li><div class="voce"><h3>Seppie all'insalata x2 <span class="surg">*</span></h3></div><span class="p">9,00</span></li>
+    </ul>
+  </section>
+
+  <!-- ===================== PRIMI ===================== -->
+  <section id="primi" class="sezione">
+    <h2>Primi piatti</h2>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Pacchero fresco 130 g</h3><p>pomodorini e baccalà <span class="surg">*</span></p></div><span class="p">10,00</span></li>
+      <li><div class="voce"><h3>Spaghettone 130 g</h3><p>con polipetti alla luciana <span class="surg">*</span></p></div><span class="p">10,00</span></li>
+      <li><div class="voce"><h3>Spaghetto alla chitarra fresco 130 g</h3><p>porcini<span class="surg">*</span>, guanciale e noci</p></div><span class="p">9,00</span></li>
+      <li><div class="voce"><h3>Rigatone alla carbonara 130 g</h3><p>pepe, guanciale, pecorino</p></div><span class="p">8,00</span></li>
+      <li><div class="voce"><h3>Rigatone all'amatriciana 130 g</h3><p>pomodoro, guanciale, pecorino</p></div><span class="p">8,00</span></li>
+      <li><div class="voce"><h3>Linguine 130 g</h3><p>colatura di alici, pane profumato e olive bianche</p></div><span class="p">9,00</span></li>
+      <li><div class="voce"><h3>Spaghettone 130 g</h3><p>ai pomodorini e basilico</p></div><span class="p">7,00</span></li>
+      <li><div class="voce"><h3>Scialatiello 130 g ai frutti di mare</h3><p>cozze e vongole 250 g · su disponibilità giornaliera</p></div><span class="p">14,00</span></li>
+    </ul>
+  </section>
+
+  <!-- ===================== SECONDI ===================== -->
+  <section id="secondi" class="sezione">
+    <h2>Secondi</h2>
+    <h4 class="sotto">Di pesce</h4>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Frittura di gamberi e calamari <span class="surg">*</span></h3></div><span class="p">14,00</span></li>
+      <li><div class="voce"><h3>Baccalà fritto <span class="surg">*</span></h3><p>su disponibilità giornaliera</p></div><span class="p">13,00</span></li>
+      <li><div class="voce"><h3>Polpo alla luciana <span class="surg">*</span></h3></div><span class="p">8,00</span></li>
+    </ul>
+    <h4 class="sotto">Di carne</h4>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Filetto di Angus 250 g</h3><p>con patate rustiche</p></div><span class="p">15,00</span></li>
+      <li><div class="voce"><h3>Entrecôte di Angus 350 g</h3><p>contorni disponibili</p></div><span class="p">15,00</span></li>
+      <li><div class="voce"><h3>Tagliata di Angus 200 g</h3><p>rucola, pomodoro e grana</p></div><span class="p">13,00</span></li>
+      <li><div class="voce"><h3>Tris di carne</h3><p>salsiccia, costoletta, carne vaccina</p></div><span class="p">12,00</span></li>
+    </ul>
+  </section>
+
+  <!-- ===================== CONTORNI ===================== -->
+  <section id="contorni" class="sezione">
+    <h2>Contorni</h2>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Contorni vari</h3></div><span class="nota">su disponibilità giornaliera</span></li>
+      <li><div class="voce"><h3>Verdure grigliate</h3></div><span class="nota">su disponibilità giornaliera</span></li>
+      <li><div class="voce"><h3>Patate al forno o fritte</h3></div><span class="p"></span></li>
+    </ul>
+  </section>
+
+  <!-- ===================== INSALATONE ===================== -->
+  <section id="insalatone" class="sezione">
+    <h2>Insalatone</h2>
+    <p class="occhiello">Tutte con insalata mista e rucola</p>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Con verdure grigliate</h3><p>patate grigliate, pomodoro ramato grigliato, olive bianche, mais</p></div><span class="p">8,00</span></li>
+      <li><div class="voce"><h3>Con pollo grigliato</h3><p>straccetti 200 g, olive nere, glassa di aceto balsamico, crostini di pane, pancetta croccante</p></div><span class="p">11,00</span></li>
+      <li><div class="voce"><h3>Con tonno</h3><p>pomodorini, olive bianche, mais</p></div><span class="p">9,00</span></li>
+      <li><div class="voce"><h3>Con straccetti di carne</h3><p>straccetti 250 g, pomodori secchi, olive infornate, scaglie di grana</p></div><span class="p">12,00</span></li>
+    </ul>
+  </section>
+
+  <!-- ===================== DOLCI ===================== -->
+  <section id="dolci" class="sezione">
+    <h2>Dolci</h2>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Dolci</h3><p>su disponibilità giornaliera</p></div><span class="p">5,00</span></li>
+      <li><div class="voce"><h3>Calde Calde</h3><p>ciambelline con Nutella</p></div><span class="p">5,00</span></li>
+    </ul>
+  </section>
+
+  <!-- ===================== BEVANDE ===================== -->
+  <section id="bevande" class="sezione">
+    <h2>Bevande</h2>
+
+    <h4 class="sotto">Bibite</h4>
+    <div class="col-head"><span>bottiglia</span><span>lattina</span></div>
+    <ul class="lista">
+      <li><div class="voce"><h3>Coca-Cola</h3></div><span class="p">2,50</span><span class="p">2,00</span></li>
+      <li><div class="voce"><h3>Coca-Cola Zero</h3></div><span class="p">2,50</span><span class="p">2,00</span></li>
+      <li><div class="voce"><h3>Coca-Cola Triplo Zero</h3></div><span class="p">2,50</span><span class="p na">–</span></li>
+      <li><div class="voce"><h3>Fanta</h3></div><span class="p">2,50</span><span class="p">2,00</span></li>
+      <li><div class="voce"><h3>Sprite</h3></div><span class="p">2,50</span><span class="p">2,00</span></li>
+      <li><div class="voce"><h3>Estathé <span class="leggero">limone o pesca</span></h3></div><span class="p na">–</span><span class="p">2,00</span></li>
+    </ul>
+
+    <div class="col-head"><span>asporto</span><span>a tavola</span></div>
+    <ul class="lista">
+      <li><div class="voce"><h3>Acqua naturale o gassata</h3></div><span class="p">1,00</span><span class="p">1,50</span></li>
+      <li><div class="voce"><h3>Acqua naturale o gassata</h3><p>bottiglia grande</p></div><span class="p">2,00</span><span class="p">2,50</span></li>
+      <li><div class="voce"><h3>Pepsi 1,5 L</h3></div><span class="p">3,00</span><span class="p">4,00</span></li>
+      <li><div class="voce"><h3>Coca-Cola 1,5 L</h3></div><span class="p">4,00</span><span class="p">4,00</span></li>
+    </ul>
+
+    <h4 class="sotto">Birre</h4>
+    <div class="col-head"><span>asporto</span><span>a tavola</span></div>
+    <ul class="lista">
+      <li><div class="voce"><h3>Peroni</h3></div><span class="p">1,50</span><span class="p">2,00</span></li>
+      <li><div class="voce"><h3>Nastro Azzurro</h3></div><span class="p">2,00</span><span class="p">2,50</span></li>
+      <li><div class="voce"><h3>Heineken</h3></div><span class="p">2,50</span><span class="p">3,00</span></li>
+      <li><div class="voce"><h3>Ceres</h3></div><span class="p">3,00</span><span class="p">3,50</span></li>
+      <li><div class="voce"><h3>Tennent's</h3></div><span class="p">3,00</span><span class="p">3,50</span></li>
+      <li><div class="voce"><h3>Björn</h3></div><span class="p">3,00</span><span class="p">3,50</span></li>
+    </ul>
+
+    <h4 class="sotto">Vini sfusi</h4>
+    <ul class="lista uno">
+      <li><div class="voce"><h3>Al litro</h3><p>Gragnano · Coda di Volpe · Falanghina · Aglianico</p></div><span class="p">6,00</span></li>
+    </ul>
+  </section>
+
+  <p class="legenda">Prezzi in euro. <span class="surg">*</span> Prodotto surgelato. Per allergeni e ingredienti chiedi al nostro personale.</p>
+
+  <svg class="skyline-divider" aria-hidden="true"><use href="#skyline"/></svg>
+
+  <!-- ===================== LA NOSTRA STORIA ===================== -->
+  <!-- DA PERSONALIZZARE: sostituisci questo testo con la vera storia della pizzeria -->
+  <section id="storia" class="sezione storia">
+    <h2>La nostra storia</h2>
+    <p>Big Pizza nasce nel cuore del Rione Vanvitelli, a Caserta, con un'idea semplice: una pizza buona, generosa e fatta con ingredienti di qualità, da gustare al tavolo con gli amici o comodamente a casa.</p>
+    <p>Dal forno escono ogni giorno le pizze classiche della tradizione napoletana, le nostre specialità e la pizza a ½ metro, perfetta da condividere. E per chi non vuole solo pizza, la cucina propone antipasti, primi, secondi di carne e di pesce.</p>
+    <p class="firma">Ti aspettiamo in Via Dossetti 9!</p>
+  </section>
+
+  <!-- ===================== CONTATTI ===================== -->
+  <section id="contatti" class="sezione contatti">
+    <h2>Contatti</h2>
+    <div class="card-ordina">
+      <p class="card-titolo">Ordina</p>
+      <p>per telefono o su WhatsApp</p>
+      <a class="tel-grande" href="tel:+393792896651">379 289 6651</a>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="tel:+393792896651">Chiama</a>
+        <a class="btn btn-green" href="https://wa.me/393792896651" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="info">
+      <h3>Dove siamo</h3>
+      <p>Via Dossetti 9, Rione Vanvitelli<br>81100 Caserta (CE)</p>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Big+Pizza+Via+Dossetti+9+Caserta" target="_blank" rel="noopener">Apri in Google Maps →</a>
+    </div>
+
+    <div class="info">
+      <h3>Orari</h3>
+      <table class="orari">
+        <tr data-giorni="2,3,4,5,6,0"><td>Mar – Dom</td><td>10:00 – 15:00 <span class="tipo">solo cucina</span>18:00 – 24:00 <span class="tipo">pizzeria e cucina</span></td></tr>
+        <tr data-giorni="1" class="chiuso"><td>Lunedì</td><td>Chiuso</td></tr>
+      </table>
+      <p class="nota-orari">A pranzo (10–15) è aperta solo la cucina: le pizze si sfornano la sera, dalle 18.</p>
+    </div>
+  </section>
+
+  <!-- ===================== SEGUICI ===================== -->
+  <section id="seguici" class="sezione seguici">
+    <div class="card-social">
+      <p class="card-titolo">Seguici!</p>
+      <p>Novità del menù, offerte e serate: le trovi prima su Instagram e Facebook.</p>
+      <div class="social-actions ">
+        <a class="btn btn-social btn-ig" href="https://www.instagram.com/big_pizza_caserta/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg><span>Instagram</span></a>
+        <a class="btn btn-social btn-fb" href="https://www.facebook.com/share/1JQRbMTiDx/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg><span>Facebook</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <svg class="skyline-footer" aria-hidden="true"><use href="#skyline"/></svg>
+  <p class="footer-nome">Big Pizza</p>
+  <p class="footer-sub">Pizzeria <span class="dot">•</span> Cucina <span class="dot">•</span> Delivery</p>
+  <p class="footer-small">Via Dossetti 9 · Rione Vanvitelli · Caserta</p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/big_pizza_caserta/" target="_blank" rel="noopener" aria-label="Big Pizza su Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg></a>
+    <a href="https://www.facebook.com/share/1JQRbMTiDx/" target="_blank" rel="noopener" aria-label="Big Pizza su Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21z"/></svg></a>
+  </div>
+  <a class="top" href="#top">↑ Torna su</a>
+</footer>
+
+<a class="fab" href="tel:+393792896651" aria-label="Chiama Big Pizza per ordinare">
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+  <span>Ordina</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

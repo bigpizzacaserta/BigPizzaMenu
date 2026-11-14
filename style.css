@@ -1,0 +1,395 @@
+:root {
+  --crema: #f5efdf;
+  --crema-scuro: #ebe2c9;
+  --nero: #1b1b1b;
+  --grigio: #6b665a;
+  --linea: #d8cfb6;
+  --rosso: #c8191f;
+  --verde: #1f7a3a;
+  --font-titoli: "Permanent Marker", "Comic Sans MS", cursive;
+  --font-testo: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --larghezza: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--nero);
+  font-family: var(--font-testo);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+a { color: inherit; }
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 28px 16px 22px;
+  max-width: var(--larghezza);
+  margin: 0 auto;
+}
+.hero-logo {
+  width: min(78vw, 340px);
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+.hero-address {
+  margin: 0 0 18px;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--grigio);
+}
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #fff;
+  min-width: 140px;
+}
+.btn-red { background: var(--rosso); }
+.btn-green { background: var(--verde); }
+.btn:active { transform: translateY(1px); }
+
+/* ---------- Barra sezioni ---------- */
+.tabs {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(245, 239, 223, 0.96);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--linea);
+}
+.tabs-inner {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 10px 16px;
+  max-width: var(--larghezza);
+  margin: 0 auto;
+}
+.tabs-inner::-webkit-scrollbar { display: none; }
+.tabs a {
+  flex: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--linea);
+  background: #fffaf0;
+  white-space: nowrap;
+}
+.tabs a.attivo {
+  background: var(--nero);
+  border-color: var(--nero);
+  color: var(--crema);
+}
+
+/* ---------- Sezioni ---------- */
+main {
+  max-width: var(--larghezza);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.sezione {
+  padding-top: 26px;
+  scroll-margin-top: 58px;
+}
+.sezione h2 {
+  font-family: var(--font-titoli);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+/* trattini tricolore come sul menù cartaceo */
+.sezione h2::after {
+  content: "";
+  width: 62px;
+  height: 4px;
+  flex: none;
+  background: linear-gradient(90deg, var(--verde) 0 26px, transparent 26px 36px, var(--rosso) 36px);
+  border-radius: 2px;
+}
+.sotto {
+  font-family: var(--font-titoli);
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 22px 0 4px;
+}
+.occhiello {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--grigio);
+  margin: -4px 0 6px;
+}
+
+/* intestazione colonne prezzi */
+.col-head {
+  display: grid;
+  grid-template-columns: 1fr 58px 64px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid var(--nero);
+  margin-top: 10px;
+}
+.col-head span { text-align: right; }
+.col-head span:first-child { grid-column: 2; }
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lista li {
+  display: grid;
+  grid-template-columns: 1fr 58px 64px;
+  align-items: baseline;
+  padding: 11px 0;
+  border-bottom: 1px dashed var(--linea);
+}
+.lista.uno li { grid-template-columns: 1fr auto; column-gap: 16px; }
+.lista.uno { border-top: 1.5px solid var(--nero); }
+.voce h3 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin: 0;
+}
+.voce p {
+  margin: 2px 0 0;
+  font-size: 0.84rem;
+  color: var(--grigio);
+}
+.p {
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.rosso { color: var(--rosso); }
+.na { color: var(--grigio); font-weight: 400; }
+.leggero { font-weight: 400; }
+.surg { color: var(--rosso); font-weight: 700; }
+.nota {
+  font-size: 0.78rem;
+  color: var(--grigio);
+  text-align: right;
+}
+.speciale h3 { color: var(--rosso); }
+.speciale h3::before { content: "★ "; }
+
+.box-extra {
+  margin-top: 16px;
+  background: var(--crema-scuro);
+  border-radius: 10px;
+  padding: 4px 16px;
+}
+.box-extra div {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  padding: 10px 0;
+}
+.box-extra div + div { border-top: 1px dashed var(--linea); }
+.box-extra .p { margin-left: auto; }
+
+.legenda {
+  font-size: 0.8rem;
+  color: var(--grigio);
+  margin: 26px 0 0;
+}
+
+/* ---------- Decorazioni ---------- */
+.skyline-divider {
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: 30px auto 0;
+  color: var(--nero);
+}
+
+/* ---------- Storia ---------- */
+.storia p { margin: 0 0 12px; }
+.storia .firma {
+  font-family: var(--font-titoli);
+  font-size: 1.25rem;
+  color: var(--rosso);
+}
+
+/* ---------- Contatti ---------- */
+.card-ordina {
+  background: var(--crema-scuro);
+  border-radius: 12px;
+  padding: 18px 20px 20px;
+  margin-bottom: 18px;
+}
+.card-ordina p { margin: 0; }
+.card-titolo {
+  font-family: var(--font-titoli);
+  font-size: 1.5rem;
+}
+.tel-grande {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--rosso);
+  text-decoration: none;
+  margin: 4px 0 14px;
+}
+.card-ordina .hero-actions { justify-content: flex-start; }
+.info { padding: 12px 0; border-top: 1px dashed var(--linea); }
+.info h3 { margin: 0 0 4px; font-size: 1rem; }
+.info p { margin: 0 0 6px; }
+.link { font-weight: 600; color: var(--verde); text-decoration: none; }
+.orari { border-collapse: collapse; font-size: 0.92rem; }
+.orari td { padding: 3px 18px 3px 0; vertical-align: top; }
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 0 16px 90px;
+}
+.skyline-footer {
+  display: block;
+  width: 100%;
+  max-width: var(--larghezza);
+  height: 70px;
+  margin: 0 auto 16px;
+  color: var(--nero);
+}
+.footer-nome {
+  font-family: var(--font-titoli);
+  font-size: 1.8rem;
+  margin: 0;
+}
+.footer-sub {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 2px 0 8px;
+}
+.dot { color: var(--rosso); }
+.footer-small { font-size: 0.8rem; color: var(--grigio); margin: 0 0 14px; }
+.top { font-size: 0.85rem; font-weight: 600; text-decoration: none; }
+
+/* ---------- Pulsante "Ordina" fisso ---------- */
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--rosso);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 18px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.fab.nascosto { opacity: 0; transform: translateY(20px); pointer-events: none; }
+
+/* ---------- Schermi più grandi ---------- */
+@media (min-width: 640px) {
+  .hero { padding-top: 40px; }
+  .sezione h2 { font-size: 2.3rem; }
+  .lista li, .col-head { grid-template-columns: 1fr 80px 80px; }
+  .lista.uno li { grid-template-columns: 1fr auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---------- Orari e social ---------- */
+.hero-orari { margin: -10px 0 18px; font-size: 0.85rem; }
+.hero-segui {
+  margin: 20px 0 8px;
+  font-family: var(--font-titoli);
+  font-size: 1.15rem;
+}
+.social-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-ig { background: linear-gradient(45deg, #f09433, #e6683c 30%, #dc2743 55%, #cc2366 75%, #bc1888); }
+.btn-fb { background: #1877f2; }
+
+.orari .tipo { display: block; font-size: 0.78rem; color: var(--grigio); margin-bottom: 4px; }
+.orari td:first-child { white-space: nowrap; }
+.orari td:last-child { font-weight: 600; }
+.orari tr.oggi td { font-weight: 700; }
+.orari tr.oggi td:first-child::after {
+  content: "oggi";
+  margin-left: 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--rosso);
+  padding: 1px 7px;
+  border-radius: 999px;
+  vertical-align: 2px;
+}
+.orari tr.chiuso td:last-child { color: var(--rosso); font-weight: 600; }
+.nota-orari { font-size: 0.82rem; color: var(--grigio); margin-top: 8px !important; }
+
+.card-social {
+  background: var(--nero);
+  color: var(--crema);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.card-social p { margin: 0 0 14px; }
+.card-social .card-titolo { margin-bottom: 4px; font-size: 1.8rem; }
+
+.footer-social {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin: 0 0 14px;
+}
+.footer-social a {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--nero);
+  color: var(--crema);
+}
